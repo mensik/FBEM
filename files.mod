@@ -1,5 +1,5 @@
-GFORTRAN module version '0' created from utils.f90 on Thu Mar 31 16:28:32 2011
-MD5:8385d9efc28d9e1dfc3174c598445207 -- If you edit this, you'll get what you deserve.
+GFORTRAN module version '0' created from utils.f90 on Sat Apr  2 18:48:53 2011
+MD5:577cb921704c0b7ed1719c37fc8d74e0 -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () () ()
 () () ())
@@ -28,11 +28,11 @@ INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
 6 'n' '' 'n' 4 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
 9 'a' '' 'a' 8 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
-DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (CONSTANT (INTEGER 4
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (CONSTANT (INTEGER 4
 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ())
 0 () () () 0 0)
 12 'v' '' 'v' 11 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
-DUMMY) (REAL 8 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT (INTEGER 4
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT (INTEGER 4
 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
 )
 

@@ -1,7 +1,7 @@
 !******************************************************************************
       module la
 !******************************************************************************
-  double precision, parameter :: PREC = 1e-10
+  real, parameter :: PREC = 1e-10
 
 
 contains
@@ -13,12 +13,12 @@ contains
 
     implicit none
 
-    double precision, dimension (:,:), intent(in) :: A
-    double precision, dimension (:), intent(in) :: b
-    double precision, dimension (:), intent(out) :: x
+    real, dimension (:,:), intent(in) :: A
+    real, dimension (:), intent(in) :: b
+    real, dimension (:), intent(out) :: x
   
-    double precision, dimension (:), allocatable :: r, p, Ap
-    double precision :: alpha, r_sold, r_sold_new
+    real, dimension (:), allocatable :: r, p, Ap
+    real :: alpha, r_sold, r_sold_new
     integer counter, i, n
 
 !------------------------------------------------------------------------------
@@ -57,11 +57,11 @@ contains
   
     implicit none
 
-    double precision, dimension (:,:), intent(in) :: A
-    double precision, dimension (:), intent(in) :: x
-    double precision, dimension (:), intent(out) :: y
+    real, dimension (:,:), intent(in) :: A
+    real, dimension (:), intent(in) :: x
+    real, dimension (:), intent(out) :: y
   
-    double precision :: row_sum
+    real :: row_sum
     integer :: m , n, i, j
 
 !------------------------------------------------------------------------------

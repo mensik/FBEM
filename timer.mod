@@ -1,5 +1,5 @@
-GFORTRAN module version '0' created from utils.f90 on Thu Mar 31 11:34:00 2011
-MD5:15d01415566a8b23b55134bce71675f2 -- If you edit this, you'll get what you deserve.
+GFORTRAN module version '0' created from utils.f90 on Sat Apr  2 18:48:53 2011
+MD5:b144cf96459f95c7713652142699cb6b -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () () ()
 () () ())
@@ -21,7 +21,7 @@ MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () ()
 4 'tend' 'timer' 'tend' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 EXPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
 5 'time' 'timer' 'time' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
-EXPLICIT-SAVE) (REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+EXPLICIT-SAVE) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
 6 'timer' 'timer' 'timer' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
 UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
 7 'tstart' 'timer' 'tstart' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC

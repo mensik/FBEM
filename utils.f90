@@ -6,7 +6,7 @@
   integer :: clockrate
   integer :: tstart, tend
 
-  double precision :: time
+  real :: time
 
 contains
 !******************************************************************************
@@ -59,7 +59,7 @@ contains
 !------------------------------------------------------------------------------ 
     implicit none
 
-    double precision, dimension(:,:), intent(out) :: A
+    real, dimension(:,:), intent(out) :: A
     integer :: m, n, i 
 !------------------------------------------------------------------------------
     open(unit=99, file='A.dat', status='old', action='read')
@@ -80,7 +80,7 @@ contains
 !------------------------------------------------------------------------------
     implicit none
 
-    double precision, dimension(:), intent(out) :: v
+    real, dimension(:), intent(out) :: v
     integer :: s
 !------------------------------------------------------------------------------
     open(unit=99, file='b.dat', status='old', action='read')

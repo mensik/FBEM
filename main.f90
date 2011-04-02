@@ -1,24 +1,18 @@
 program fbem
 
-  use la
-  use timer
-  use files
+  use discretization
 
-  double precision, allocatable, dimension(:,:) :: A
-  double precision, allocatable, dimension(:) :: x,b,temp
+  real :: ix = 2.0
+  real, allocatable :: nodes(:,:)
+  integer, allocatable :: edges(:,:)
+  integer :: node_count
 
-  integer :: m, n, i, j
+  node_count = nodeCount(2.0,6.0,2.0,2.0,0.25)
 
-  call get_matrix_size(m,n)
+  allocate(nodes(node_count, 2), edges(node_count,2))
 
-  allocate(A(m,n), x(n), b(m),temp(m))
+  call make_borders(2.0,6.0,2.0,2.0,2.0,0.25, nodes, edges) 
 
-  call load_matrix(A)
-  call load_vector(b)
+  deallocate(nodes, edges)
 
-  call start_timer()
-  call cg(A,b,x)
-  call update_timer()
-
-  write (*,*) 'Time : ', time
 end program fbem
