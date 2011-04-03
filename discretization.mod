@@ -1,5 +1,5 @@
-GFORTRAN module version '0' created from discret.f90 on Sat Apr  2 21:19:26 2011
-MD5:dcc355db734ec4d61cbf4e21dc17782d -- If you edit this, you'll get what you deserve.
+GFORTRAN module version '0' created from discret.f90 on Sun Apr  3 21:00:46 2011
+MD5:1d44c2510f0b633c269c708f84b155ea -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () () ()
 () () ())
@@ -20,20 +20,20 @@ UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
 0 0 () () 0 () () () 0 0)
 11 'make_borders' 'discretization' 'make_borders' 1 ((PROCEDURE
 UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
-UNKNOWN 0 0 0 UNKNOWN ()) 12 0 (13 14 15 16 17 18 19 20) () 0 () () () 0
-0)
-21 'nodecount' 'discretization' 'nodecount' 1 ((PROCEDURE UNKNOWN-INTENT
-MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 22 0 (23
-24 25 26 27) () 21 () () () 0 0)
-23 'ix' '' 'ix' 22 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+UNKNOWN 0 0 0 UNKNOWN ()) 12 0 (13 14 15 16 17 18 19 20 21) () 0 () () ()
+0 0)
+22 'nodecount' 'discretization' 'nodecount' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 23 0 (24
+25 26 27 28) () 22 () () () 0 0)
+24 'ix' '' 'ix' 23 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-24 'iy' '' 'iy' 22 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+25 'iy' '' 'iy' 23 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-25 'jx' '' 'jx' 22 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+26 'jx' '' 'jx' 23 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-26 'jy' '' 'jy' 22 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+27 'jy' '' 'jy' 23 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
-27 'h' '' 'h' 22 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+28 'h' '' 'h' 23 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
 14 'iy' '' 'iy' 12 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
 REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
@@ -55,16 +55,20 @@ DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (CONSTANT
 DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (2 ASSUMED_SHAPE (
 CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0
 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+21 'area_index_bounds' '' 'area_index_bounds' 12 ((VARIABLE OUT
+UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ())
+0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '3') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '2')) 0 () ()
+() 0 0)
 4 'bl' '' 'bl' 3 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
-DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4 0 0
-INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (
-CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
-INTEGER ()) 0 '2')) 0 () () () 0 0)
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '2')) 0 () ()
+() 0 0)
 5 'tr' '' 'tr' 3 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
-DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 EXPLICIT (CONSTANT (INTEGER 4 0 0
-INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (
-CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
-INTEGER ()) 0 '2')) 0 () () () 0 0)
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '2')) 0 () ()
+() 0 0)
 6 'h' '' 'h' 3 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (REAL 4
 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
 7 'nodes' '' 'nodes' 3 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
@@ -80,4 +84,4 @@ DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
 )
 
 ('discrete_rect' 0 2 'discretization' 0 10 'make_borders' 0 11 'nodecount'
-0 21)
+0 22)
