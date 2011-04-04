@@ -93,6 +93,8 @@ contains
       r = r - alpha * Ap
       r_sold_new = sum(r(:)**2)
 
+      write (*,*) r_sold_new
+
       if (r_sold_new < PREC) then
         exit
       end if

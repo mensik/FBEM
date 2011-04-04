@@ -1,5 +1,5 @@
-GFORTRAN module version '0' created from la.f90 on Mon Apr  4 15:55:05 2011
-MD5:5451050b3840841c1427e6a5fed8546d -- If you edit this, you'll get what you deserve.
+GFORTRAN module version '0' created from la.f90 on Mon Apr  4 17:13:58 2011
+MD5:97995963b138e2db7a6ecba2fcfb1c3a -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () ()
 () () () () () () () () () () () () () () () () () ())
@@ -40,7 +40,7 @@ UNKNOWN IMPLICIT-SAVE) (REAL 4 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0
 REAL ()) 0 '0.3243f60@1') () 0 () () () 0 0)
 30 'prec' 'constants' 'prec' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN IMPLICIT-SAVE) (REAL 4 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0
-REAL ()) 0 '0.a7c5ac0@-4') () 0 () () () 0 0)
+REAL ()) 0 '0.4189378@-2') () 0 () () () 0 0)
 27 'u' '' 'u' 26 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION
 DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 0 0
 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '2')) 0 () ()

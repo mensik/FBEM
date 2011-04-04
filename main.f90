@@ -2,12 +2,15 @@ program fbem
 
   use discretization
   use bem
+  use la
   use files
 
-  real , parameter :: h = 3
+  real , parameter :: h = .25
   real, parameter :: er = 5
+  real, parameter :: Ue = 4
+
   real, allocatable :: nodes(:,:)
-  real, allocatable :: A(:,:), temp(:,:)
+  real, allocatable :: A(:,:), u(:), w(:)
   integer, allocatable :: edges(:,:)
   integer :: b(3,2)
   integer :: node_count
@@ -27,7 +30,7 @@ program fbem
   bl_s = (/ 1, r_size + 1, 2*r_size + 1, 2*r_size + v_size + 1/)
   bl_e = (/ r_size, 2*r_size, 2*r_size + v_size, 2*r_size + 2*v_size/)
 
-  allocate(A((r_size + v_size)* 2, (r_size + v_size) * 2))
+  allocate(A((r_size + v_size)* 2, (r_size + v_size) * 2), u((r_size + v_size) * 2), w((r_size + v_size) * 2))
   
   A = 0
 
@@ -68,7 +71,14 @@ program fbem
   call assembleV(b(1,1), b(1,2), b(1,1), b(1,2), nodes, edges, A(bl_s(4):bl_e(4), bl_s(4):bl_e(4)))
 !------------------------------------------------------------------------------
 
+  u = 0
+  u(bl_s(3):bl_e(3)) = Ue
+  u(bl_s(4):bl_e(4)) = -Ue
+
   call save_matrix(A)
-  
-  deallocate(nodes, edges, A)
+  call save_vector(u)
+
+  call cg(A, u, w)
+
+  deallocate(nodes, edges, A, u, w)
 end program fbem
